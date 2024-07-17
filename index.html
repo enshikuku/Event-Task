@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Event</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
+        function closeNav() {
+            document.querySelector('#nav-check').checked = false
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-header">
+                <div class="nav-title"><a href="#">MY PROJECT</a></div>
+            </div>
+            <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="closeNav()">HOME</a>
+                <a href="#" onclick="closeNav()">ABOUT</a>
+                <a href="#" onclick="closeNav()">BLOG</a>
+                <a href="#" onclick="closeNav()">CONTACT</a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
