@@ -52,7 +52,24 @@
                 </div>
             </div>
             <div class="nav-logo-links">
+                <button id="showButton" class="showButton"><img src="assets/images/chat.png" alt=""></button>
                 <a href="register.html" class="register_btn">Register</a>
+                <section id="contactSection" class="contact-section">
+                    <h2>Contact Us</h2>
+                    <p>For inquiries, contact us at:</p>
+                    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                    <p>Phone: <a href="tel:+123456789">+1 234 567 89</a></p>
+                </section>
+                <script>
+                    document.getElementById('showButton').addEventListener('click', function() {
+                    var contactSection = document.getElementById('contactSection');
+                    if (contactSection.style.display === 'none' || contactSection.style.display === '') {
+                        contactSection.style.display = 'block'; // Show the contact section
+                    } else {
+                        contactSection.style.display = 'none'; // Hide the contact section
+                    }
+                    });
+                </script>
                 <div class="nav-btn">
                     <label for="nav-check"><img src="assets/images/nav.png" alt=""></label>
                 </div>
@@ -289,5 +306,14 @@
             </div>
         </div>
     </div>
+    <footer>
+        <div class="socials">
+            Share & Follow 
+            <a href="#"><img src="assets/images/facebook.png" alt=""></a>
+            <a href="#"><img src="assets/images/x.png" alt=""></a>
+            <a href="#"><img src="assets/images/ig.png" alt=""></a>
+            <a href="#"><img src="assets/images/linkedin.png" alt=""></a>
+        </div>
+    </footer>
 </body>
 </html>
