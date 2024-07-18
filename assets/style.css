@@ -404,5 +404,75 @@ header {
     #speakers {
         padding: 50px 20px;
     }
-    
+}
+
+.speakers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.speaker {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    padding: 5px;
+}
+.speaker__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.linkedinlogo{
+    width: 30px;
+}
+
+
+#venue  {
+    display: flex;
+    width: 100%;
+    padding: 100px 200px;
+    flex-wrap: wrap;
+}
+#venue h1 {
+    font-size: 40px;
+    width: 100%;
+    color: #002E6B;
+    text-align: center;
+    margin-bottom: 30px;
+}
+@media (max-width:550px) {
+    #venue {
+        padding: 50px 20px;
+    }
+}
+
+.venues {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.venue, .map {
+    width: 40%;
+    min-width: 300px;
+}
+
+iframe {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 500px;
+    height:  200px;
+    ;
 }
